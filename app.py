@@ -6,7 +6,7 @@ import numpy as np
 st.set_option('deprecation.showfileUploaderEncoding', False)
 @st.cache(allow_output_mutation = True)
 def load_model():
-    model = tf.keras.models.load_model(r"C:\Users\Atul\Downloads\stkabir\basic_cnn.h5")
+    model = tf.keras.models.load_model(r"./basic_cnn.h5")
     return model
 
 model = load_model()
@@ -21,7 +21,7 @@ st.sidebar.info("Artificial intelligence (AI) and open source tools, technologie
 # st.sidebar.text("Credits to Kabir")
     
 st.sidebar.header("For Any Queries/Suggestions Please reach out at :")
-st.sidebar.info("kabirrrr0402@gmail.com")
+st.sidebar.info("atul0402mishra@gmail.com")
 
 file = st.file_uploader('Upload the Cell Image', type=['jpg','png'])
 # import cv2
