@@ -43,10 +43,10 @@ else:
     predictions = import_and_predict(image, model)
     if predictions > 0.5:
 	    string = "You have Malaria."
-	    st.error(string, icon="⚠️")
+	    st.error("You have Malaria.", icon="⚠️")
     else:
 	    string = "You Don't have Malaria."
-	    st.success(string, icon:"✅")
+	    st.success("You Don't have Malaria.", icon:"✅")
     # class_names = ["have Malaria", "don't have Malaria"]
     # string = "Your report after analyzing your Cell image is you " + class_names[np.argmax(predictions)]
     
